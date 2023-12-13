@@ -1,0 +1,12 @@
+def volta_retardatario(x, y):
+    volta = 1
+    while x * volta <= y:
+        volta += 1
+    return volta
+
+# Entrada de exemplo
+entrada = input("Digite os tempos (X Y): ")
+x, y = map(int, entrada.split())
+
+# Chamada da função e exibição da saída
+print(volta_retardatario(x, y))
